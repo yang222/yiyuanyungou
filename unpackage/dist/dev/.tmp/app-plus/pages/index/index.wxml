@@ -1,0 +1,1 @@
+<view class="content"><image class="logo" src="/static/logo.png"></image><view data-event-opts="{{[['tap',[['toindex2',['$event']]]]]}}" class="text-area" bindtap="__e"><text class="title">{{title}}</text><text>我是杨凯</text></view></view>
