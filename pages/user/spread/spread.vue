@@ -22,9 +22,9 @@
 		
 		</view>
 		<view class="woqulist">
-			<view class="item">邀请记录 <text class="r">></text></view>
-			<view class="item">佣金明细 <text class="r">></text></view>
-			<view class="item">邀请说明 <text class="r">></text></view>
+			<view class="item"><navigator url="../invite/invite">邀请记录 <text class="r iconfont iconyou-"></text></navigator></view>
+			<view class="item"><navigator url="../commission/commission">佣金明细 <text class="r iconfont iconyou-"></text></navigator></view>
+			<view class="item"><navigator url="../invite_note/invite_note">邀请说明 <text class="r iconfont iconyou-"></text></navigator></view>
 		</view>
 		<view class="layout" v-show="hbshow">
 			<view class="cont">
@@ -137,14 +137,14 @@ uni-page-body{
 		margin-bottom: 10upx;
 	}
 	.area{
-		width: 98%;
+		width: 90%;
 		height: 120upx;
 		line-height: 50upx;
 		margin: 0 auto;
 		box-sizing: border-box;
 		border: 1upx solid #aaa;
-		padding: 10upx 5upx;
-		font-size: 28upx;
+		padding: 10upx 10upx;
+		font-size: 24upx;
 		color: #999;
 	}
 	.warn{
@@ -187,6 +187,9 @@ uni-page-body{
 			font-size: 30upx;
 			padding: 0 30upx;
 			border-bottom: 1upx solid #ccc;
+			.iconfont{
+				font-size: 40upx;
+			}
 		}
 	}
 	.layout{

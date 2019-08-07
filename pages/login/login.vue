@@ -109,8 +109,7 @@
 	}
 	.login{
 		height: 100%;
-		position: relative;
-		background: #eee;
+		background: #f7f7f7;
 		.login_de{
 			.oth{
 				position: absolute;

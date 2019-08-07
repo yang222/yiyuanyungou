@@ -1,6 +1,6 @@
 <template>
 	<view class="recharge_money">
-		<view class="recharge-title">请选择充值金额</view>
+		<view class="recharge-title"></view>
 		<view class="rec_input"><input type="text" placeholder="请输入充值金额" v-model="money"></view>
 		<view class="money-list">
 			<view class="money-item" v-for="(item,index) in money_list" :class="{'active':item == money}" :key="index" @tap="check(item)">{{item}}</view>

@@ -66,13 +66,13 @@
 		<view class="line"></view>
 		<view class="slide-list">
 			<view class="slide-item">
-				<text class="icon"></text>
+				<text class="icon iconfont icontupian"></text>
 				<text>图文详情</text>
 				<text class="r">建议在wifi下查看</text>
 			</view>
-			<view class="slide-item"  @tap="wq">
-				<text class="icon"></text>
-				<text>往期揭晓</text>
+			<view class="slide-item" @tap="wq">
+				<text class="icon iconfont icondingdan"></text>
+				<text >往期揭晓</text>
 			</view>
 		</view>
 		<view class="line"></view>
@@ -356,6 +356,18 @@ export default {
 			padding: 20upx;
 			font-size: 32upx;
 			border-bottom: 1upx solid #eee;
+			.icon{
+				font-size: 32upx;
+				margin-right: 10upx;
+				&.icontupian{
+					color: #3BB720;
+					margin-right: 16upx;
+				}
+				&.icondingdan{
+					color: rgb(255,221,102);
+					font-size: 42upx;
+				}
+			}
 		}
 	}
 	.join-container{

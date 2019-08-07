@@ -13,6 +13,7 @@
 </script>
 
 <style>
+	@import url("https://at.alicdn.com/t/font_1337726_qkslu7b6v8.css");
 	/*每个页面公共css */
 	.line{height: 20upx;background: #eee;width: 100%;}
 	.color{

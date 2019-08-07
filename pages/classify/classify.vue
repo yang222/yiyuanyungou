@@ -16,7 +16,7 @@
 			<view class="nav active">人气商品</view>
 			<view class="nav">最新上架</view>
 			<view class="nav">即将满员</view>
-			<view class="nav">总需人次 <view class="px"><text class="top">升</text><text class="bot">降</text></view></view>
+			<view class="nav">总需人次 <view class="px"><text class="top iconfont iconGroup-"></text><text class="bot iconfont iconGroup-"></text></view></view>
 		</view>
 		<view class="items">
 			<view class="item-cont">
@@ -119,7 +119,10 @@
 					display: block;
 					line-height: 40upx;
 					height: 40upx;
-					font-size: 24upx;
+					font-size: 32upx;
+				}
+				.bot{
+					transform:rotate(180deg);
 				}
 			}
 		}

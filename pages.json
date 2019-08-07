@@ -18,12 +18,6 @@
 					"titleNView" : {  
 						"buttons" : [  
 							{  
-								"text" : "分类",  
-								"fontSize" : "14",  
-								"redDot" : false  ,
-								"float":"left"
-							},  
-							{  
 								"text" : "消息",  
 								"fontSize" : "14",  
 								"badgeText" : "12"  
@@ -329,6 +323,61 @@
            		}  
            	}
            }
+        }
+        ,{
+            "path" : "pages/user/commission/commission",
+            "style" : {"navigationBarTitleText":"佣金记录",
+            	"enablePullDownRefresh": true,//就是这个
+            	"app-plus":{
+            		"titleNView" : {  
+            			
+            		}  
+            	}
+            }
+        }
+        ,{
+            "path" : "pages/user/invite/invite",
+            "style" : {"navigationBarTitleText":"邀请记录",
+            	"enablePullDownRefresh": true,//就是这个
+            	"app-plus":{
+            		"titleNView" : {  
+            			
+            		}  
+            	}
+            }
+        }
+        ,{
+            "path" : "pages/user/invite_note/invite_note",
+            "style" : {"navigationBarTitleText":"邀请说明",
+            	"enablePullDownRefresh": true,//就是这个
+            	"app-plus":{
+            		"titleNView" : {  
+            			
+            		}  
+            	}
+            }
+        }
+        ,{
+            "path" : "pages/user/info/info",
+             "style" : {"navigationBarTitleText":"个人资料",
+            	"enablePullDownRefresh": true,//就是这个
+            	"app-plus":{
+            		"titleNView" : {  
+            			
+            		}  
+            	}
+            }
+        }
+        ,{
+            "path" : "pages/user/mess/mess",
+             "style" : {"navigationBarTitleText":"通知消息",
+            	"enablePullDownRefresh": true,//就是这个
+            	"app-plus":{
+            		"titleNView" : {  
+            			
+            		}  
+            	}
+            }
         }
     ],
 	"globalStyle": {

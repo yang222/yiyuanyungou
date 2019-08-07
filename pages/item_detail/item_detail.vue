@@ -56,12 +56,12 @@
 		<view class="line"></view>
 		<view class="slide-list">
 			<view class="slide-item">
-				<text class="icon"></text>
+				<text class="icon iconfont icontupian"></text>
 				<text>图文详情</text>
 				<text class="r">建议在wifi下查看</text>
 			</view>
 			<view class="slide-item" @tap="wq">
-				<text class="icon"></text>
+				<text class="icon iconfont icondingdan"></text>
 				<text >往期揭晓</text>
 			</view>
 		</view>
@@ -86,8 +86,8 @@
 			<view class="join-cart">
 				加入购物车
 			</view>
-			<view class="cart">
-				
+			<view class="cart iconfont iconunie62d" @tap="tocart">
+				<text class="num">1</text>
 			</view>
 		</view>
 		
@@ -143,6 +143,11 @@ export default {
 				// _self.getmorenews();
 	},
 	methods: {
+		tocart(){
+			uni.switchTab({
+				url:"../cart/cart"
+			})
+		},
 		wq(){
 			uni.navigateTo({
 				url: '../wq/wq',
@@ -333,6 +338,18 @@ export default {
 			padding: 20upx;
 			font-size: 32upx;
 			border-bottom: 1upx solid #eee;
+			.icon{
+				font-size: 32upx;
+				margin-right: 10upx;
+				&.icontupian{
+					color: #3BB720;
+					margin-right: 16upx;
+				}
+				&.icondingdan{
+					color: rgb(255,221,102);
+					font-size: 42upx;
+				}
+			}
 		}
 	}
 	.join-container{
@@ -376,8 +393,9 @@ export default {
 	.footer-join-btns{
 		position: fixed;
 		width: 100%;
-		height: 80upx;
+		height: 120upx;
 		padding: 20upx;
+		box-sizing: border-box;
 		text-align: center;
 		left: 0;
 		bottom: 0;
@@ -405,8 +423,21 @@ export default {
 			border-radius: 6upx;
 		}
 		.cart{
-			width: 120upx;
-			
+			width: 70upx;
+			font-size: 60upx;
+			position: relative;
+			.num{
+				position: absolute;
+				width: 40upx;
+				height: 40upx;
+				border-radius: 50%;
+				background: #ff4c42;
+				color: #fff;
+				font-size: 28upx;
+				line-height: 40upx;
+				top: -10upx;
+				right: -10upx;
+			}
 		}
 	}
 }
